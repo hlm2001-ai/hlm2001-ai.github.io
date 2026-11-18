@@ -121,6 +121,10 @@ dialog::backdrop{background:#13261d9c;backdrop-filter:blur(4px)}.dialog-inner{pa
 .qualification>div:nth-child(2){flex:1}.qualification h3{font:700 19px 'Space Grotesk',sans-serif;letter-spacing:-.04em;margin:6px 0}.qualification p{font-size:13px;color:#657268;margin:0}
 .qualification-year{font:700 12px 'JetBrains Mono',monospace;color:#67806a}
 .dialog-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.dialog-figure{margin:22px 0;background:#eef1ec;padding:12px;border:1px solid #dee5d9;border-radius:10px;overflow:hidden}
+.dialog-figure img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain}
+.dialog-figure figcaption{font:500 11px 'Inter',sans-serif;color:#718273;text-align:center;margin-top:9px}
+.dialog-figure[hidden]{display:none}
 @media(max-width:900px){.project-featured{grid-column:span 2;grid-template-columns:1fr}.project-featured .project-visual{height:260px;min-height:260px}.research-card{min-height:300px}.creative-grid{grid-template-columns:1fr}}
 @media(max-width:720px){.hero h1{font-size:clamp(57px,12vw,82px)}.hero h1 em{font-size:.8em}.project-featured{grid-column:span 1}.project-featured .project-body{padding:24px}.project-featured h3{font-size:24px}.research-grid{grid-template-columns:1fr}.research-card{min-height:0}.creative-composition{min-height:210px}.ux-frames div{width:85px;height:115px}.ux-frames i:nth-child(1){height:30px}.qualification{gap:14px}.qualification-icon{width:48px;height:48px;flex:0 0 48px}.qualification-year{display:none}.art-monogram{font-size:91px}.hero-art{min-height:360px}.art-core{padding:24px 19px}}
 @media(max-width:380px){.hero h1{font-size:51px}.art-monogram{font-size:68px}.art-floating{left:5px}}
@@ -153,7 +157,7 @@ dialog::backdrop{background:#13261d9c;backdrop-filter:blur(4px)}.dialog-inner{pa
         </div>
         <div class="hero-note"><span>↳</span><span>Based in Oman · Open to meaningful opportunities</span></div>
       </div>
-      <div class="hero-art" id="interactive-art" aria-label="Interactive HLM monogram with animated connection points. Move a pointer or tap to explore.">
+      <div class="hero-art" role="img" id="interactive-art" aria-label="Interactive HLM monogram with animated connection points. Move a pointer or tap to explore.">
         <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas><div class="art-grid" aria-hidden="true"></div><div class="orbit" aria-hidden="true"></div><div class="orbit two" aria-hidden="true"></div>
         <div class="art-core"><div class="art-top"><span>HLM / INTERACTIVE IDENTITY</span><span class="art-dots"><i></i><i></i><i></i></span></div><div class="art-monogram"><span>H</span><small>LM</small><b>.</b></div><div class="art-base"><strong>SOFTWARE × AI × DESIGN</strong><span>MOVE / TAP ↗</span></div></div>
         <div class="art-floating">A little code, a lot of curiosity.<span>Pointer-reactive digital canvas</span></div>
@@ -275,7 +279,7 @@ dialog::backdrop{background:#13261d9c;backdrop-filter:blur(4px)}.dialog-inner{pa
   </section>
 </main>
 <footer><div class="container foot"><span><b>halima.</b> · Software · AI · Design</span><span>Independent portfolio · Built with web technologies</span><span>© <span id="year">2026</span> Halima Al Maqbali</span></div></footer>
-<dialog id="project-dialog" aria-labelledby="dialog-heading"><div class="dialog-inner"><div class="dialog-top"><span class="eyebrow" id="dialog-label"></span><button class="dialog-close" id="dialog-close" aria-label="Close project details">×</button></div><h2 id="dialog-heading"></h2><p id="dialog-description"></p><div class="chips" id="dialog-tags"></div><div class="dialog-foot" id="dialog-foot">Project descriptions distinguish documented features from future improvements.</div><div class="dialog-actions" id="dialog-actions"></div></div></dialog>
+<dialog id="project-dialog" aria-labelledby="dialog-heading"><div class="dialog-inner"><div class="dialog-top"><span class="eyebrow" id="dialog-label"></span><button class="dialog-close" id="dialog-close" aria-label="Close project details">×</button></div><h2 id="dialog-heading"></h2><p id="dialog-description"></p><div class="chips" id="dialog-tags"></div><figure class="dialog-figure" id="dialog-figure" hidden><img id="dialog-figure-img" alt="" loading="lazy"><figcaption>Actual project image extracted from the original academic documentation.</figcaption></figure><div class="dialog-foot" id="dialog-foot">Project descriptions distinguish documented features from future improvements.</div><div class="dialog-actions" id="dialog-actions"></div></div></dialog>
 <script>
 (function(){
   "use strict";
@@ -306,6 +310,11 @@ dialog::backdrop{background:#13261d9c;backdrop-filter:blur(4px)}.dialog-inner{pa
     document.getElementById("dialog-description").textContent=p.description;
     const tags=document.getElementById("dialog-tags");tags.replaceChildren();
     const dialogActions=document.getElementById("dialog-actions"); dialogActions.replaceChildren();
+    const imgMap={companion:{src:"assets/llm-learning-companion.svg",alt:"Real LLM Learning Companion educational AI chat interface"},genbuddy:{src:"assets/gen-buddy.svg",alt:"GEN-BUDDY real AI-powered document interface"},healthcare:{src:"assets/healthcare-analysis.svg",alt:"Chart extracted from the Healthcare Attrition Analysis academic report"}};
+    const fig=document.getElementById("dialog-figure"), figImg=document.getElementById("dialog-figure-img");
+    const media=imgMap[b.dataset.project]; fig.hidden=!media;
+    if(media){figImg.src=media.src;figImg.alt=media.alt;}else{figImg.removeAttribute("src");figImg.alt="";}
+
     if(b.dataset.project==="hardware"){const link=document.createElement("a");link.href="https://computer-components-course-halima.nnoh7586.chatgpt.site/";link.target="_blank";link.rel="noopener noreferrer";link.className="btn btn-primary";link.textContent="View existing 3D Lab ↗";dialogActions.appendChild(link);}
     p.tags.forEach(tag=>{const e=document.createElement("span");e.className="chip";e.textContent=tag;tags.appendChild(e);});
     if(typeof dialog.showModal==="function")dialog.showModal();else dialog.setAttribute("open","");
