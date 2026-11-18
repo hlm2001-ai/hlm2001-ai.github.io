@@ -7,12 +7,12 @@
 <meta name="description" content="Halima Abdullah Al Maqbali — software engineer, data science master's student, AI researcher, and creative technologist based in Oman. Explore selected projects and experience.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Halima Al Maqbali | Software Engineer & Creative Technologist">
-<meta property="og:description" content="Where engineering meets imagination. A portfolio of work across AI, software, data, and design.">
+<meta property="og:description" content="Beyond the Code. Selected software, AI research, data science, and creative projects by Halima Al Maqbali.">
 <meta property="og:url" content="https://hlm2001-ai.github.io/">
-<title>Halima Al Maqbali — Software Engineer & Creative Technologist</title>
+<title>Halima Al Maqbali — Beyond the Code | AI, Software & Design</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f8f8f3;--paper:#fffefa;--ink:#1b2420;--text:#29312e;--muted:#67716b;--forest:#284d3e;--forest2:#1f3c30;--sage:#c8d3bc;--line:#dfe4db;--sand:#eee8d9;--radius:18px;--max:1220px}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
@@ -67,6 +67,64 @@ dialog::backdrop{background:#13261d9c;backdrop-filter:blur(4px)}.dialog-inner{pa
 @media(max-width:720px){.container{width:calc(100% - 40px)}.nav{height:66px}.desktop-nav,.top-contact{display:none}.menu-btn{display:flex}.mobile-nav{display:none;background:var(--bg);padding:9px 20px 23px;border-bottom:1px solid var(--line)}.mobile-nav.open{display:grid;gap:3px}.mobile-nav a{display:block;padding:12px 7px;font-weight:700;color:var(--forest);border-bottom:1px solid #e9ede6}.hero{padding:65px 0 60px}.hero-grid{grid-template-columns:1fr;gap:39px}.hero h1{font-size:clamp(50px,12vw,74px);margin-top:22px}.hero-sub{font-size:15px}.hero-art{min-height:340px}.art-core{width:74%}.art-monogram{font-size:75px}.art-floating{font-size:11px}.ticker .container{justify-content:center;gap:14px;padding:19px 0}.ticker span{font-size:9px}.ticker b{font-size:10px}.section{padding:74px 0}.section-head{display:block}.section-intro{margin-top:20px}.section-title{font-size:43px}.projects,.about-grid,.experience-grid,.award-grid,.skill-groups{grid-template-columns:1fr}.projects{gap:18px}.project-visual{height:214px}.project p{min-height:0}.project-body{padding:23px}.coming{align-items:start;flex-direction:column;padding:22px}.about-grid,.experience-grid{gap:40px}.about-copy{font-size:16px}.award-grid{gap:12px}.award{min-height:145px}.contact{padding:82px 0}.contact .section-title{font-size:54px}.foot{display:block;text-align:center}.foot>*{display:block;margin:6px 0}}
 @media(max-width:380px){.hero h1{font-size:45px}.project-foot{flex-direction:column;align-items:start}.hero-actions .btn{width:100%}.section-title{font-size:38px}.art-monogram{font-size:62px}.timeline-entry{grid-template-columns:60px 1fr;gap:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+/* Second-generation editorial portfolio refinements */
+.hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(64px,7.2vw,112px);font-weight:700;letter-spacing:-.085em;max-width:790px;line-height:1.01}
+.hero h1 span{display:block}
+.hero h1 em{display:block;font:700 .82em/1.19 'JetBrains Mono',monospace;letter-spacing:-.095em;color:var(--forest);font-style:normal;margin-top:2px}
+.hero-sub,.about-copy,.research-card p{font-family:'Inter',sans-serif}
+.hero-art{isolation:isolate;cursor:crosshair;--mx:0deg;--my:0deg}
+.hero-canvas{position:absolute;inset:0;display:block;z-index:1;opacity:.82;pointer-events:none}
+.art-core{z-index:3;transform:perspective(720px) rotateY(var(--mx)) rotateX(var(--my));transition:transform .27s ease-out}
+.art-monogram{font:700 clamp(66px,7.5vw,118px)/1 'Space Grotesk',sans-serif;letter-spacing:-.115em;white-space:nowrap}
+.art-monogram small{font-size:.78em;color:#b4d0b2}
+.art-monogram b{font-size:.92em;color:#a2c8a8;font-weight:700}
+.art-floating{z-index:5;transition:transform .35s}.hero-art:hover .art-floating{transform:translate(4px,-4px)}
+.visual-lab{background:radial-gradient(ellipse at 55% 40%,#375e4d,#1b3128 82%);height:290px}
+.lab-scene{width:265px;height:190px;position:relative;transform:perspective(600px) rotateX(38deg) rotateZ(-24deg);transition:transform .6s cubic-bezier(.2,.7,.1,1)}
+.project:hover .lab-scene{transform:perspective(600px) rotateX(20deg) rotateZ(-13deg) scale(1.06)}
+.lab-pcb{width:100%;height:100%;background:repeating-linear-gradient(90deg,#4573601a 0 3px,transparent 3px 16px),repeating-linear-gradient(#a2d1a71b 0 2px,transparent 2px 15px),#213e31;border:3px solid #9ac6a2;border-radius:10px;box-shadow:13px 17px 0 #0f261b,14px 20px 22px #07170baa;position:relative;display:block}
+.lab-pcb span:not(.pcb-dots){position:absolute;border:2px solid #9dc7a4;color:#deebdb;font:bold 12px 'JetBrains Mono',monospace;text-align:center;padding-top:25px;border-radius:4px;box-shadow:5px 6px 0 #14291d}
+.pcb-socket{left:42px;top:31px;width:80px;height:74px;background:#54795c}.pcb-memory{right:15px;top:15px;width:37px;height:155px;background:#325743;writing-mode:vertical-rl;padding:13px 6px!important}.pcb-card{left:33px;bottom:12px;width:111px;height:38px;background:#395a48;padding:7px!important}.pcb-ssd{left:151px;top:26px;width:49px;height:43px;background:#56876c;padding:9px!important}.pcb-dots{position:absolute;left:14px;top:16px;background:#b7dabb;width:7px;height:7px;border-radius:50%;box-shadow:0 19px 0 #b7dabb,20px 0 0 #b7dabb}
+.lab-corner{position:absolute;right:24px;bottom:19px;font:700 10px/1.6 'JetBrains Mono',monospace;letter-spacing:.1em;color:#d8e9d5;text-align:right}
+.project-featured{grid-column:span 2;display:grid;grid-template-columns:1.08fr .92fr}
+.project-featured .project-visual{height:100%;min-height:320px}.project-featured .project-body{display:flex;flex-direction:column;justify-content:center;padding:39px}
+.project-featured h3{font-size:31px;line-height:1.22}
+.project-featured p{max-width:450px;min-height:0}
+.project-shot{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;background:#e5e9e1;padding:12px 10px}
+.project-shot+.visual-backup{display:none}
+.visual-fallback .visual-backup{display:block}
+.project-visual .visual-tag{z-index:2;padding:6px 9px;background:#213b2eb8;border-radius:4px!important;color:#f4f6ed!important}
+.research-section{background:#f1f3ec;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.research-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.research-card{border:1px solid #d9e1d5;background:#fffefa;border-radius:12px;padding:30px 30px 23px;min-height:280px;display:flex;flex-direction:column}
+.research-highlight{background:#264638;color:#f5f8f2;border-color:#264638}
+.research-number{font:700 12px 'JetBrains Mono',monospace;color:#819884;text-align:right;margin-bottom:25px}
+.research-highlight .research-number,.research-highlight .eyebrow{color:#b8cfb3}
+.research-card h3{font:700 21px/1.34 'Space Grotesk',sans-serif;letter-spacing:-.04em;margin:12px 0}
+.research-card p{font-size:13px;color:#657268;line-height:1.86;margin:0 0 23px}
+.research-highlight p{color:#c3d5c5}
+.research-foot{border-top:1px solid #cbd8ca;padding-top:13px;display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap;margin-top:auto;font-size:11px;color:#728073}
+.research-highlight .research-foot{border-color:#ffffff3b;color:#cdded0}
+.creative-section{background:#fcfcf7}
+.creative-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}
+.creative-hero,.creative-small{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:white}
+.creative-composition{min-height:260px;background:radial-gradient(ellipse at 80% 10%,#dde9d5,#ccd8cc);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.ux-flow{position:absolute;top:21px;left:23px;font:700 10px 'JetBrains Mono',monospace;letter-spacing:.035em;color:#40634a}.ux-flow span{color:#76947b;margin:0 7px}
+.ux-frames{display:flex;gap:17px;transform:perspective(600px) rotateX(10deg) rotateZ(-7deg)}
+.ux-frames div{display:flex;flex-direction:column;gap:10px;background:#fcfdf7;border:5px solid #375446;width:119px;height:157px;border-radius:12px;padding:13px;box-shadow:6px 12px 0 #587a60}
+.ux-frames div:nth-child(2){transform:translateY(-18px)}.ux-frames i{height:20px;background:#c1d7ba;border-radius:4px}.ux-frames i:nth-child(1){height:52px;background:#729a7d}
+.creative-body{padding:28px}.creative-body h3,.creative-small h3{font:700 22px 'Space Grotesk',sans-serif;letter-spacing:-.05em;margin:10px 0}.creative-body p,.creative-small p{color:#6b776e;line-height:1.8;font-size:13px}
+.creative-stack{display:grid;gap:18px}.creative-small{padding:30px;display:flex;flex-direction:column;justify-content:center}.creative-small h3{font-size:23px}.muted-chip{color:#6c806e;font:700 10px 'JetBrains Mono',monospace}
+.qualification{display:flex;align-items:center;gap:26px;border-top:1px solid var(--line);padding:26px 0}
+.qualification-icon{width:63px;height:63px;display:grid;place-items:center;background:#e0e9dc;color:#2b5440;border-radius:9px;font-size:26px}
+.qualification>div:nth-child(2){flex:1}.qualification h3{font:700 19px 'Space Grotesk',sans-serif;letter-spacing:-.04em;margin:6px 0}.qualification p{font-size:13px;color:#657268;margin:0}
+.qualification-year{font:700 12px 'JetBrains Mono',monospace;color:#67806a}
+.dialog-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+@media(max-width:900px){.project-featured{grid-column:span 2;grid-template-columns:1fr}.project-featured .project-visual{height:260px;min-height:260px}.research-card{min-height:300px}.creative-grid{grid-template-columns:1fr}}
+@media(max-width:720px){.hero h1{font-size:clamp(57px,12vw,82px)}.hero h1 em{font-size:.8em}.project-featured{grid-column:span 1}.project-featured .project-body{padding:24px}.project-featured h3{font-size:24px}.research-grid{grid-template-columns:1fr}.research-card{min-height:0}.creative-composition{min-height:210px}.ux-frames div{width:85px;height:115px}.ux-frames i:nth-child(1){height:30px}.qualification{gap:14px}.qualification-icon{width:48px;height:48px;flex:0 0 48px}.qualification-year{display:none}.art-monogram{font-size:91px}.hero-art{min-height:360px}.art-core{padding:24px 19px}}
+@media(max-width:380px){.hero h1{font-size:51px}.art-monogram{font-size:68px}.art-floating{left:5px}}
+@media(prefers-reduced-motion:reduce){.art-core,.lab-scene,.art-floating{transition:none!important}}
 </style>
 </head>
 <body>
@@ -75,74 +133,92 @@ dialog::backdrop{background:#13261d9c;backdrop-filter:blur(4px)}.dialog-inner{pa
   <div class="container nav">
     <a href="#home" class="brand" aria-label="Halima Al Maqbali, home">halima<span>.</span></a>
     <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#recognition">Recognition</a>
+      <a href="#work">Work</a><a href="#research">Research</a><a href="#creative">Creative</a><a href="#experience">Experience</a>
     </nav>
     <a class="top-contact" href="#contact">Let's connect ↗</a>
     <button class="menu-btn" id="menu-button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
-  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#recognition">Recognition</a><a href="#contact">Contact</a></nav>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation"><a href="#work">Work</a><a href="#research">Research</a><a href="#creative">Creative</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#recognition">Recognition</a><a href="#certifications">Qualifications</a><a href="#contact">Contact</a></nav>
 </header>
 <main id="main">
   <section class="hero" id="home" aria-labelledby="intro-heading">
     <div class="container hero-grid">
       <div>
         <div class="hero-label"><span class="live-dot" aria-hidden="true"></span> SOFTWARE ENGINEER · CREATIVE TECHNOLOGIST</div>
-        <h1 id="intro-heading">Where engineering meets <em>imagination.</em></h1>
-        <p class="hero-sub">I'm Halima — a software engineering graduate and Data Science master's student working at the intersection of intelligent systems, thoughtful design, and meaningful digital experiences.</p>
+        <h1 id="intro-heading"><span>Beyond the</span> <em>Code.</em></h1>
+        <p class="hero-sub">I'm Halima — a software engineer and Data Science master's student exploring what happens when code, responsible AI, analytical thinking, and design come together.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#work">Explore selected work <span class="arrow" aria-hidden="true">↗</span></a>
           <a class="btn btn-secondary" href="#contact">Get in touch <span class="arrow" aria-hidden="true">→</span></a>
         </div>
         <div class="hero-note"><span>↳</span><span>Based in Oman · Open to meaningful opportunities</span></div>
       </div>
-      <div class="hero-art" role="img" aria-label="Typographic visual featuring Halima's initials, H L M, in a refined forest-green design">
-        <div class="art-grid" aria-hidden="true"></div><div class="orbit" aria-hidden="true"></div><div class="orbit two" aria-hidden="true"></div>
-        <div class="art-core"><div class="art-top"><span>PERSONAL PORTFOLIO</span><span class="art-dots"><i></i><i></i><i></i></span></div><div class="art-monogram">H<small>LM</small>.</div><div class="art-base"><strong>Logic × Creativity</strong><span>2026 / OMAN</span></div></div>
-        <div class="art-floating">Building with purpose.<span>Engineering / Data / Design</span></div>
+      <div class="hero-art" id="interactive-art" aria-label="Interactive HLM monogram with animated connection points. Move a pointer or tap to explore.">
+        <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas><div class="art-grid" aria-hidden="true"></div><div class="orbit" aria-hidden="true"></div><div class="orbit two" aria-hidden="true"></div>
+        <div class="art-core"><div class="art-top"><span>HLM / INTERACTIVE IDENTITY</span><span class="art-dots"><i></i><i></i><i></i></span></div><div class="art-monogram"><span>H</span><small>LM</small><b>.</b></div><div class="art-base"><strong>SOFTWARE × AI × DESIGN</strong><span>MOVE / TAP ↗</span></div></div>
+        <div class="art-floating">A little code, a lot of curiosity.<span>Pointer-reactive digital canvas</span></div>
       </div>
     </div>
   </section>
   <div class="ticker" aria-label="Fields of interest"><div class="container"><span>WORKING ACROSS</span><b>ARTIFICIAL INTELLIGENCE</b><b>SOFTWARE DEVELOPMENT</b><b>DATA SCIENCE</b><b>UI / UX DESIGN</b></div></div>
   <section class="section" id="work" aria-labelledby="work-heading">
     <div class="container">
-      <div class="section-head"><div><div class="eyebrow">01 / Selected work</div><h2 class="section-title" id="work-heading">Ideas into <em>impact.</em></h2></div><p class="section-intro">A selection of academic projects and research spanning AI, software applications, and data analysis. New builds will join the collection soon.</p></div>
+      <div class="section-head"><div><div class="eyebrow">01 / Selected work</div><h2 class="section-title" id="work-heading">Inside the <em>Work.</em></h2></div><p class="section-intro">Real projects and experiments — from interactive 3D hardware learning to AI applications and machine learning. Explore the thinking behind each build.</p></div>
       <div class="filters" role="group" aria-label="Filter projects">
         <button class="filter active" data-filter="all" aria-pressed="true">All projects</button>
-        <button class="filter" data-filter="ai" aria-pressed="false">AI & Research</button>
+        <button class="filter" data-filter="interactive" aria-pressed="false">Interactive 3D</button><button class="filter" data-filter="ai" aria-pressed="false">AI Applications</button>
         <button class="filter" data-filter="web" aria-pressed="false">Web Development</button>
         <button class="filter" data-filter="data" aria-pressed="false">Data Science</button>
       </div>
       <div class="projects">
+        <article class="project project-featured" data-category="interactive web">
+  <div class="project-visual visual-lab" aria-label="Illustrative 3D computer hardware components">
+   <span class="visual-tag">Interactive 3D / educational lab</span>
+   <div class="lab-scene" aria-hidden="true"><div class="lab-pcb"><span class="pcb-socket">CPU</span><span class="pcb-memory">RAM</span><span class="pcb-card">GPU</span><span class="pcb-ssd">SSD</span><span class="pcb-dots"></span></div></div>
+   <span class="lab-corner">INTERACTIVE<br/>HARDWARE</span>
+  </div>
+  <div class="project-body"><div class="project-meta">00 / 3D learning experience · Featured</div><h3>Interactive Computer Hardware Lab</h3>
+   <p>Explore a 3D computer model, identify internal components, and practice step-by-step hardware disassembly with contextual guidance.</p>
+   <div class="project-foot"><div class="chips"><span class="chip">Interactive 3D</span><span class="chip">Hardware Education</span><span class="chip">Web</span></div>
+   <button class="detail-link" data-project="hardware">Explore project ↗</button></div>
+  </div>
+ </article>
         <article class="project" data-category="ai data">
           <div class="project-visual visual-code" aria-hidden="true"><span class="visual-tag">Visual concept · AI research</span><div class="v-window"><div class="v-head"><i></i><i></i><i></i></div><div class="v-line med"></div><div class="v-line short"></div><div class="v-line long"></div><div class="v-line med"></div><div class="v-line short"></div></div></div>
           <div class="project-body"><div class="project-meta">01 / Research · AI</div><h3>CodeTrust AI</h3><p>Investigating how prompt engineering can reduce unsupported claims in language-model-based Python debugging.</p><div class="project-foot"><div class="chips"><span class="chip">Python</span><span class="chip">LLMs</span><span class="chip">Prompt Engineering</span></div><button class="detail-link" data-project="codetrust">Read story ↗</button></div></div>
         </article>
         <article class="project" data-category="ai web">
-          <div class="project-visual visual-education" aria-hidden="true"><span class="visual-tag" style="color:#52654e">Visual concept · Education</span><div class="v-circle"></div></div>
+          <div class="project-visual visual-education"><span class="visual-tag" style="color:#52654e">Actual project screenshot</span><img class="project-shot" src="assets/llm-learning-companion.webp" alt="Actual LLM Learning Companion chat application interface" loading="lazy" onerror="this.remove();this.parentElement.classList.add('visual-fallback')"><div class="v-circle visual-backup" aria-hidden="true"></div></div>
           <div class="project-body"><div class="project-meta">02 / Award-winning project</div><h3>LLM Learning Companion</h3><p>An academic web platform exploring personalized learning with large language models — recognized as Best Graduation Project.</p><div class="project-foot"><div class="chips"><span class="chip">Education</span><span class="chip">AI</span><span class="chip">Team Lead</span></div><button class="detail-link" data-project="companion">Read story ↗</button></div></div>
         </article>
         <article class="project" data-category="ai web">
-          <div class="project-visual visual-hiring" aria-hidden="true"><span class="visual-tag" style="color:#52654e">Visual concept · Recruitment</span><div class="v-network"><i></i><i></i><i></i><i></i><i></i></div></div>
+          <div class="project-visual visual-hiring"><span class="visual-tag" style="color:#52654e">Actual project screenshot</span><img class="project-shot" src="assets/gen-buddy.webp" alt="Actual GEN-BUDDY application interface with document upload and AI-assisted answers" loading="lazy" onerror="this.remove();this.parentElement.classList.add('visual-fallback')"><div class="v-network visual-backup" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></div>
           <div class="project-body"><div class="project-meta">03 / Academic platform</div><h3>GEN-BUDDY</h3><p>A generative AI-focused recruitment assistance and skills development system designed as an academic web platform.</p><div class="project-foot"><div class="chips"><span class="chip">Web App</span><span class="chip">Generative AI</span></div><button class="detail-link" data-project="genbuddy">Read story ↗</button></div></div>
         </article>
         <article class="project" data-category="data ai">
-          <div class="project-visual visual-health" aria-hidden="true"><span class="visual-tag">Visual concept · Machine learning</span><div class="v-chart"><i></i><i></i><i></i><i></i><i></i></div></div>
+          <div class="project-visual visual-health"><span class="visual-tag">Real report visualization</span><img class="project-shot" src="assets/healthcare-analysis.webp" alt="Real chart extracted from Healthcare Attrition Analysis report" loading="lazy" onerror="this.remove();this.parentElement.classList.add('visual-fallback')"><div class="v-chart visual-backup" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></div>
           <div class="project-body"><div class="project-meta">04 / Machine learning</div><h3>Healthcare Attrition Analysis</h3><p>An academic classification project applying Support Vector Machines to healthcare workforce attrition data.</p><div class="project-foot"><div class="chips"><span class="chip">Python</span><span class="chip">SVM</span><span class="chip">ML</span></div><button class="detail-link" data-project="healthcare">Read story ↗</button></div></div>
         </article>
-        <article class="project" data-category="data">
-          <div class="project-visual visual-analytics" aria-hidden="true"><span class="visual-tag" style="color:#52654e">Visual concept · Analytics</span><div class="v-chart"><i></i><i></i><i></i><i></i><i></i></div></div>
-          <div class="project-body"><div class="project-meta">05 / Data analysis</div><h3>Student Performance Analysis</h3><p>Exploring student outcomes using statistical analysis and predictive approaches to understand performance patterns.</p><div class="project-foot"><div class="chips"><span class="chip">Data Analysis</span><span class="chip">Predictive Methods</span></div><button class="detail-link" data-project="students">Read story ↗</button></div></div>
-        </article>
-        <article class="project" data-category="web">
+<article class="project" data-category="web">
           <div class="project-visual visual-market" aria-hidden="true"><span class="visual-tag" style="color:#52654e">Visual concept · Marketplace</span><div class="v-tiles"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
           <div class="project-body"><div class="project-meta">06 / Web development</div><h3>Omani Microenterprise Marketplace</h3><p>An academic online marketplace project focused on supporting the reach of local Omani microenterprises.</p><div class="project-foot"><div class="chips"><span class="chip">Web Platform</span><span class="chip">Local Commerce</span></div><button class="detail-link" data-project="marketplace">Read story ↗</button></div></div>
         </article>
       </div>
-      <div class="coming"><div><strong>More to come, thoughtfully built.</strong><p>Future AI, automation, and design projects will be added as they are developed.</p></div><span class="eyebrow">NEXT CHAPTER ↗</span></div>
+      <div class="coming"><div><strong>Real work. Room to grow.</strong><p>New automation, full-stack and design projects will join this collection as they are completed.</p></div><span class="eyebrow">IN PROGRESS ↗</span></div>
     </div>
   </section>
+<section class="section research-section" id="research" aria-labelledby="research-heading">
+<div class="container">
+  <div class="section-head"><div><div class="eyebrow">02 / Research & publications</div><h2 class="section-title" id="research-heading">Questions worth <em>exploring.</em></h2></div><p class="section-intro">Academic research in LLM reliability, cooperative intelligence, predictive analytics, and real-world applications of computing.</p></div>
+  <div class="research-grid">
+   <article class="research-card research-highlight"><div class="research-number">R / 01</div><div class="eyebrow">RESEARCH ARTICLE · AI / LLM RELIABILITY</div><h3>The Effect of Prompt Engineering on Reducing Factual Hallucinations in Large Language Models</h3><p>An experimental study of how prompting strategies influence unsupported claims and diagnosis quality in Python debugging, using a fixed benchmark and model.</p><div class="research-foot"><span>CodeTrust AI</span><span>Publication link to be added</span></div></article>
+   <article class="research-card"><div class="research-number">R / 02</div><div class="eyebrow">ADVANCED ALGORITHMS · COMPARATIVE STUDY</div><h3>Multi-Agent Reinforcement Learning for Cooperative Decision-Making</h3><p>Reviewing value factorization and cooperative decision-making methods, including QMIX, QTRAN and related multi-agent reinforcement learning work.</p><div class="research-foot"><span>Academic study</span><span>PDF forthcoming</span></div></article>
+   <article class="research-card"><div class="research-number">R / 03</div><div class="eyebrow">DATA SCIENCE · ACADEMIC ANALYSIS</div><h3>Student Performance Analysis</h3><p>A study using statistical and predictive methods to explore academic performance patterns. Supporting visual evidence will be added when available.</p><div class="research-foot"><span>Statistical methods</span><span>Case study forthcoming</span></div></article>
+   <article class="research-card"><div class="research-number">R / 04</div><div class="eyebrow">RESEARCH METHODOLOGY · OMAN</div><h3>Smart Traffic Signals in Oman</h3><p>Research examining how smarter traffic control could improve road safety and transportation efficiency in Oman. Presented as a research study, not a deployed traffic system.</p><div class="research-foot"><span>Research project</span><span>2023–24</span></div></article>
+  </div>
+</div></section>
   <section class="section about-section" id="about" aria-labelledby="about-heading">
-    <div class="container"><div class="eyebrow">02 / The person behind the work</div><div class="about-grid">
+    <div class="container"><div class="eyebrow">03 / The person behind the work</div><div class="about-grid">
       <div><h2 class="section-title" id="about-heading">Technical by training.<br><em>Creative by nature.</em></h2><p class="about-copy">I'm <strong>Halima Abdullah Al Maqbali</strong>, a Software Engineering graduate currently pursuing a <strong>Master of Data Science</strong> at Sohar University in Oman. I enjoy moving between the structure of code, the curiosity of research, and the craft of visual design.</p><p class="about-copy">My interests span <strong>AI, machine learning, full-stack web development, data analytics, and intuitive interfaces</strong> — alongside Arabic calligraphy and visual arts. I believe the best digital experiences combine rigorous thinking with human-centered design.</p></div>
       <div><div class="fact"><b>Location</b><span>Oman</span></div><div class="fact"><b>Current focus</b><span>Artificial Intelligence · Software · Data</span></div><div class="fact"><b>Education</b><span>Master of Data Science, Sohar University (in progress)</span></div><div class="fact"><b>Background</b><span>Bachelor of Software Engineering, UTAS Shinas</span></div><div class="fact"><b>Creative practice</b><span>UI/UX · Visual communication · Arabic calligraphy</span></div></div>
     </div>
@@ -153,8 +229,18 @@ dialog::backdrop{background:#13261d9c;backdrop-filter:blur(4px)}.dialog-inner{pa
       <div class="skill-group"><div class="eyebrow">04 / Expression</div><h3>Creative practice</h3><p>Arabic Calligraphy · Drawing · Graphic Design · Creative Direction</p></div>
     </div></div>
   </section>
+<section class="section creative-section" id="creative" aria-labelledby="creative-heading">
+<div class="container"><div class="section-head"><div><div class="eyebrow">04 / The creative side</div><h2 class="section-title" id="creative-heading">More than <em>interfaces.</em></h2></div><p class="section-intro">My creative work draws on the same curiosity that drives my software projects: form, function, and attention to detail.</p></div>
+ <div class="creative-grid"><div class="creative-hero">
+  <div class="creative-composition" aria-hidden="true"><span class="ux-flow">RESEARCH <span>→</span> WIREFRAMES <span>→</span> PROTOTYPE</span><div class="ux-frames"><div><i></i><i></i><i></i></div><div><i></i><i></i><i></i></div><div><i></i><i></i><i></i></div></div></div>
+  <div class="creative-body"><div class="eyebrow">ACADEMIC UX PROJECT</div><h3>Online Product Review System</h3><p>User research, personas, journeys, information architecture, wireframes, and a high-fidelity Figma prototype explored as part of a team UX design assignment.</p><span class="muted-chip">UX RESEARCH / FIGMA / PROTOTYPING</span></div></div>
+  <div class="creative-stack">
+   <div class="creative-small"><div class="eyebrow">VISUAL PRACTICE</div><h3>Arabic Calligraphy</h3><p>Hand lettering, composition, and calligraphy workshop experience. A curated gallery of original works is being prepared.</p><span class="muted-chip">CRAFT / TYPOGRAPHY / COMPOSITION</span></div>
+   <div class="creative-small"><div class="eyebrow">VISUAL THINKING</div><h3>Graphic Design & Illustration</h3><p>An ongoing practice in visual storytelling, branding, and illustration, bridging aesthetics with digital product design.</p><span class="muted-chip">BRANDING / ILLUSTRATION / UI DESIGN</span></div>
+  </div></div>
+</div></section>
   <section class="section" id="experience" aria-labelledby="experience-heading">
-    <div class="container"><div class="section-head"><div><div class="eyebrow">03 / Path & perspective</div><h2 class="section-title" id="experience-heading">Learning by <em>doing.</em></h2></div><p class="section-intro">A foundation in software engineering, expanded through applied industry training and ongoing graduate study.</p></div>
+    <div class="container"><div class="section-head"><div><div class="eyebrow">05 / Path & perspective</div><h2 class="section-title" id="experience-heading">Learning by <em>doing.</em></h2></div><p class="section-intro">A foundation in software engineering, expanded through applied industry training and ongoing graduate study.</p></div>
       <div class="experience-grid">
         <div><h3 class="timeline-title">Experience & training</h3>
           <div class="timeline-entry"><span class="year">2026</span><div><h4>IT & Technical Internship</h4><div class="org">OQ</div><p>Practical exposure to IT support, troubleshooting, device configuration, system maintenance, and Power BI reporting.</p></div></div>
@@ -169,7 +255,7 @@ dialog::backdrop{background:#13261d9c;backdrop-filter:blur(4px)}.dialog-inner{pa
     </div>
   </section>
   <section class="section achievements" id="recognition" aria-labelledby="recognition-heading">
-    <div class="container"><div class="eyebrow">04 / Milestones</div><h2 class="section-title" id="recognition-heading">Small milestones.<br><em>Lasting motivation.</em></h2>
+    <div class="container"><div class="eyebrow">06 / Milestones</div><h2 class="section-title" id="recognition-heading">Small milestones.<br><em>Lasting motivation.</em></h2>
       <div class="award-grid">
         <div class="award"><span>2025 / AWARD</span><h3>Best Graduation Project</h3><p>UTAS Shinas specializations exhibition, sponsored by OQ.</p></div>
         <div class="award"><span>2023 / AWARD</span><h3>Public Speaking Competition Winner</h3><p>UTAS Shinas.</p></div>
@@ -177,14 +263,19 @@ dialog::backdrop{background:#13261d9c;backdrop-filter:blur(4px)}.dialog-inner{pa
       </div>
     </div>
   </section>
+<section class="section certificate-section" id="certifications" aria-labelledby="cert-heading"><div class="container">
+<div class="section-head"><div><div class="eyebrow">07 / Continued learning</div><h2 class="section-title" id="cert-heading">Beyond the <em>classroom.</em></h2></div><p class="section-intro">Additional study and professional development alongside hands-on projects and graduate research.</p></div>
+<div class="qualification"><div class="qualification-icon" aria-hidden="true">✦</div><div><div class="eyebrow">SOHAR UNIVERSITY · 2025</div><h3>Professional Qualification Program (PQP)</h3><p>Postgraduate qualifying coursework · Reported score: 6 (grading scale not provided).</p></div><span class="qualification-year">2025</span></div>
+<div class="qualification"><div class="qualification-icon" aria-hidden="true">⌁</div><div><div class="eyebrow">PROFESSIONAL DEVELOPMENT</div><h3>Ethical Hacking Workshop</h3><p>Workshop participation · UTAS Shinas.</p></div><span class="qualification-year">2025</span></div>
+</div></section>
   <section class="contact" id="contact" aria-labelledby="contact-heading">
-    <div class="container"><div class="eyebrow">05 / Let's connect</div><h2 class="section-title" id="contact-heading">Have an idea?<br><em>Let's make it real.</em></h2><p>Whether it's an opportunity, collaboration, or conversation about technology and design, I'd love to hear from you.</p>
+    <div class="container"><div class="eyebrow">08 / Let's connect</div><h2 class="section-title" id="contact-heading">Let's create<br><em>something meaningful.</em></h2><p>Open to meaningful roles, collaborations and conversations about software, artificial intelligence, data and design.</p>
       <div class="contact-actions"><a class="btn btn-primary" href="mailto:h1m.almqbali@gmail.com?subject=Hello%20Halima">Send an email <span class="arrow" aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="https://www.linkedin.com/in/halima-al-maqbali-40916a378" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span class="arrow" aria-hidden="true">↗</span></a></div>
     </div>
   </section>
 </main>
-<footer><div class="container foot"><span><b>halima.</b> · Software · AI · Design</span><span>Designed with intention. Based in Oman.</span><span>© <span id="year">2026</span> Halima Al Maqbali</span></div></footer>
-<dialog id="project-dialog" aria-labelledby="dialog-heading"><div class="dialog-inner"><div class="dialog-top"><span class="eyebrow" id="dialog-label"></span><button class="dialog-close" id="dialog-close" aria-label="Close project details">×</button></div><h2 id="dialog-heading"></h2><p id="dialog-description"></p><div class="chips" id="dialog-tags"></div><div class="dialog-foot">Project details are a summary of academic work; live demos and screenshots will be added when available.</div></div></dialog>
+<footer><div class="container foot"><span><b>halima.</b> · Software · AI · Design</span><span>Independent portfolio · Built with web technologies</span><span>© <span id="year">2026</span> Halima Al Maqbali</span></div></footer>
+<dialog id="project-dialog" aria-labelledby="dialog-heading"><div class="dialog-inner"><div class="dialog-top"><span class="eyebrow" id="dialog-label"></span><button class="dialog-close" id="dialog-close" aria-label="Close project details">×</button></div><h2 id="dialog-heading"></h2><p id="dialog-description"></p><div class="chips" id="dialog-tags"></div><div class="dialog-foot" id="dialog-foot">Project descriptions distinguish documented features from future improvements.</div><div class="dialog-actions" id="dialog-actions"></div></div></dialog>
 <script>
 (function(){
   "use strict";
@@ -197,6 +288,7 @@ dialog::backdrop{background:#13261d9c;backdrop-filter:blur(4px)}.dialog-inner{pa
     document.querySelectorAll(".project").forEach(card=>{card.classList.toggle("hidden",category!=="all"&&!card.dataset.category.split(" ").includes(category));});
   }));
   const projectData={
+    hardware:{label:"INTERACTIVE 3D / LEARNING LAB",title:"Interactive Computer Hardware Lab",description:"A web-based educational experience for exploring computer components in an interactive 3D model. Learners can identify parts and practice guided computer disassembly, with attention to component relationships, order, and feedback. This is an existing project; a previously supplied demo address is included below. Some practice-mode dependency logic has been undergoing refinement.",tags:["3D Interaction","Computer Hardware","Educational Web App","Practice Mode"]},
     codetrust:{label:"AI RESEARCH / EXPERIMENTAL STUDY",title:"CodeTrust AI",description:"CodeTrust AI explores whether iterative prompt engineering changes the reliability of language-model responses when diagnosing beginner-level Python programs. The research compares different prompting strategies on a structured debugging benchmark, with attention to factual hallucinations, diagnosis quality, and evidence-grounded explanations. Research title: The Effect of Prompt Engineering on Reducing Factual Hallucinations in Large Language Models: An Experimental Study.",tags:["Python","LLMs","Prompt Engineering","AI Reliability","Research"]},
     companion:{label:"GRADUATION PROJECT / 2025",title:"LLM Learning Companion",description:"Enhancing Education Through Personalized Learning: A Large Language Model as a Learning Companion was a team-led academic web platform project exploring personalized educational support with large language models. The project received Best Graduation Project at the UTAS Shinas Specializations Exhibition in 2025.",tags:["AI","Web Platform","Education","Team Leadership"]},
     genbuddy:{label:"ACADEMIC WEB PLATFORM / 2024",title:"GEN-BUDDY",description:"GEN-BUDDY — Generative AI-Based Recruitment Assistance and Skill Development System — was developed as an academic web platform project at UTAS Shinas, focused on the intersection of recruiting and skill development.",tags:["Generative AI","Recruitment","Web Applications"]},
@@ -213,6 +305,8 @@ dialog::backdrop{background:#13261d9c;backdrop-filter:blur(4px)}.dialog-inner{pa
     document.getElementById("dialog-heading").textContent=p.title;
     document.getElementById("dialog-description").textContent=p.description;
     const tags=document.getElementById("dialog-tags");tags.replaceChildren();
+    const dialogActions=document.getElementById("dialog-actions"); dialogActions.replaceChildren();
+    if(b.dataset.project==="hardware"){const link=document.createElement("a");link.href="https://computer-components-course-halima.nnoh7586.chatgpt.site/";link.target="_blank";link.rel="noopener noreferrer";link.className="btn btn-primary";link.textContent="View existing 3D Lab ↗";dialogActions.appendChild(link);}
     p.tags.forEach(tag=>{const e=document.createElement("span");e.className="chip";e.textContent=tag;tags.appendChild(e);});
     if(typeof dialog.showModal==="function")dialog.showModal();else dialog.setAttribute("open","");
     closeBtn.focus();
@@ -221,6 +315,36 @@ dialog::backdrop{background:#13261d9c;backdrop-filter:blur(4px)}.dialog-inner{pa
   dialog.addEventListener("click",function(e){if(e.target===dialog)dialog.close();});
   dialog.addEventListener("close",()=>{if(previousFocus&&typeof previousFocus.focus==="function")previousFocus.focus();});
   document.getElementById("year").textContent=String(new Date().getFullYear());
+
+  // Accessible animated hero visual: no dependencies, respects reduced motion.
+  (function(){
+    const host=document.getElementById('interactive-art'), canvas=document.getElementById('hero-canvas');
+    if(!host||!canvas||!canvas.getContext)return;
+    const ctx=canvas.getContext('2d'), reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let width=0,height=0,active=true,raf=null,phase=0,mouse={x:.5,y:.5},target={x:.5,y:.5};
+    const dots=Array.from({length:32},(_,i)=>({x:((i*97)%101)/101,y:((i*53+19)%97)/97,r:(i%3)+1.1,p:i*.37}));
+    function resize(){const dpr=Math.min(2,window.devicePixelRatio||1);const r=host.getBoundingClientRect();width=r.width;height=r.height;canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);canvas.style.width=width+'px';canvas.style.height=height+'px';ctx.setTransform(dpr,0,0,dpr,0,0);}
+    function draw(){
+      if(!width||!height)return;
+      ctx.clearRect(0,0,width,height);
+      target.x+=(mouse.x-target.x)*.045;target.y+=(mouse.y-target.y)*.045;
+      const pts=dots.map(d=>({x:d.x*width+Math.sin(phase+d.p)*12+((target.x-.5)*22),y:d.y*height+Math.cos(phase*.8+d.p)*10+((target.y-.5)*18),r:d.r}));
+      for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){
+        const a=pts[i],b=pts[j],dx=a.x-b.x,dy=a.y-b.y,dist=Math.hypot(dx,dy);
+        if(dist<112){ctx.beginPath();ctx.strokeStyle='rgba(196,232,199,'+((1-dist/112)*.23).toFixed(3)+')';ctx.lineWidth=.8;ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();}
+      }
+      pts.forEach(p=>{ctx.beginPath();ctx.fillStyle='rgba(202,229,203,.55)';ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();});
+      if(!reduce)phase+=.005;
+    }
+    function animate(){if(!active)return;draw();if(!reduce)raf=requestAnimationFrame(animate);}
+    resize();animate();
+    host.addEventListener('pointermove',e=>{const r=host.getBoundingClientRect();mouse.x=Math.max(0,Math.min(1,(e.clientX-r.left)/r.width));mouse.y=Math.max(0,Math.min(1,(e.clientY-r.top)/r.height));host.style.setProperty('--mx',((mouse.x-.5)*13).toFixed(1)+'deg');host.style.setProperty('--my',((mouse.y-.5)*-11).toFixed(1)+'deg');if(reduce)draw();});
+    host.addEventListener('pointerleave',()=>{mouse={x:.5,y:.5};host.style.setProperty('--mx','0deg');host.style.setProperty('--my','0deg');if(reduce)draw();});
+    host.addEventListener('pointerdown',()=>{phase+=1.8;if(reduce)draw();});
+    if(typeof ResizeObserver!=='undefined')new ResizeObserver(()=>{resize();if(reduce)draw();}).observe(host);
+    document.addEventListener('visibilitychange',()=>{if(document.hidden){active=false;if(raf)cancelAnimationFrame(raf);}else if(!active){active=true;animate();}});
+  })();
+
 })();
 </script>
 </body>
